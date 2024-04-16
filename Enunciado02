@@ -1,0 +1,22 @@
+package Aplicaciones;
+   import java.util.Scanner;
+
+public class Enunciado02 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        float peso, altura, imc;
+        
+        System.out.print("Ingrese su peso :");
+        peso = Float.parseFloat(teclado.nextLine());    
+        
+        System.out.print("Ingrese su estatura :");
+        altura = Float.parseFloat(teclado.nextLine());
+        
+        imc= peso / (altura * altura);
+        
+        System.out.println("----Reporte----");
+        System.out.println("---------------");
+        System.out.println("El IMC es :" + imc);
+        
+    }
+}
