@@ -1,0 +1,25 @@
+package Aplicaciones;
+import java.util.Scanner;
+
+public class Enunciado05 {
+    public static void main(String[] args) {
+        System.out.println("Halla el area de un cilindro");
+        System.out.println("----------------------------");
+        Scanner teclado = new Scanner(System.in);
+        double radio , altura , volumen , areaBase , areaTotal , areaLateral;
+        final double Pi= 3.1416;
+        
+        System.out.print("ingresar  longitud del radio:");   
+        radio = teclado.nextInt();
+        System.out.print("Ingresar altura:");
+        altura = teclado.nextInt();
+
+        areaLateral = (Pi * radio * 2 )* altura;
+        areaBase = Pi * radio * radio;
+        areaTotal = areaLateral + ( areaBase * 2);
+       
+        System.out.println("el area total es :" + areaTotal);        
+        volumen = areaBase * altura;
+        System.out.println("el volumen es:" + volumen);
+    }
+}
